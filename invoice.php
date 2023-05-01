@@ -101,13 +101,13 @@
         <div class="brand-section">
             <div class="row">
                 <div class="col-6">
-                    <h1 class="text-white">FABCART</h1>
+                    <h1 class="text-white">FAB MARKETING </h1>
                 </div>
                 <div class="col-6">
                     <div class="company-details">
-                        <p class="text-white">assdad asd  asda asdad a sd</p>
-                        <p class="text-white">assdad asd asd</p>
-                        <p class="text-white">+91 888555XXXX</p>
+                         <p class="text-white">125, Oppanakara St., Krishna market,</p>
+                        <p class="text-white">Coimbatore, Tamil Nadu 641001</p>
+                        <p class="text-white">+91 8885589364</p>
                     </div>
                 </div>
             </div>
@@ -115,25 +115,35 @@
 
         <div class="body-section">
             <div class="row">
-                <div class="col-6">
-                    <h2 class="heading">Invoice No.: 001</h2>
-                    <p class="sub-heading">Tracking No. fabcart2025 </p>
-                    <p class="sub-heading">Order Date: 20-20-2021 </p>
-                    <p class="sub-heading">Email Address: customer@gfmail.com </p>
+                         <div class="col-6">
+                <form action="/INVOICE.PHP" method="post">
+                   <label>vend_id:</label>
+                   <input type="id" name="id"><br><br>
+                   <input type="submit" value="submit" name="submit"><br><br>
+                   </form>
+
+                    <h2 class="heading">vendor id: 001</h2>
+                    <p class="sub-heading">NAME: LABEL KRAFT</p>
+                    <p class="sub-heading">ADDRESS : MUMBAI </p>
+                    <p class="sub-heading">Email Address: LBKRAFT@gfmail.com </p>
+                        <p class="sub-heading">PHONE:8072360281</p>
+                            <p class="sub-heading">GST no: 879NHGJ77 </p>
+                            
                 </div>
-                <div class="col-6">
-                    <p class="sub-heading">Full Name:  </p>
-                    <p class="sub-heading">Address:  </p>
-                    <p class="sub-heading">Phone Number:  </p>
-                    <p class="sub-heading">City,State,Pincode:  </p>
-                </div>
-            </div>
+                            </div>
         </div>
 
         <div class="body-section">
             <h3 class="heading">Ordered Items</h3>
             <br>
-            <table class="table-bordered">
+            <form action="/INVOICE.PHP" method="post">
+                   <label>Product id:</label>
+                   <input type="id" name="id"><br><br>
+                   <input type="submit" value="submit" name="submit"><br><br>
+                   </form>
+                      <h2 class="heading">product id: 001</h2>
+            <br>
+          <table class="table-bordered">
                 <thead>
                     <tr>
                         <th>Product</th>
@@ -144,10 +154,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Product Name</td>
-                        <td>10</td>
-                        <td>1</td>
-                        <td>10</td>
+                        <td>SELF adhesive flim</td>
+                        <td>1000</td>
+                        <td>60PS</td>
+                        <td>60,000</td>
                     </tr>
                     <tr>
                         <td colspan="3" class="text-right">Sub Total</td>
@@ -180,5 +190,5 @@
 <?php
     $output = ob_get_contents();
     ob_end_clean();
-    echo $output; 
+    echo $output; 
 ?>
